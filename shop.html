@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="shop.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello!!!!!</title>
+</head>
+
+<body>
+    <div>
+        <img id="img" src="imgs/file_1116.jpg">
+    </div>
+    <a href="shop.css"></a>
+    <img style="height: 5%;width: 20%">
+    <button onclick="shop.addProduct()">הוספת מוצר</button>
+    <div id="myBtnContainer">
+        <h1 id="h1">סנן לפי קטגוריה</h1>
+        <button class="btn" style=" margin-left: 48%;border-color: darkolivegreen;" onclick="shop.showAllProducts()">
+            הכל</button>
+        <br>
+        <button class="btn" onclick="shop.showProductByKategory('צמיד')"> צמידים</button>
+        <button class="btn" onclick="shop.showProductByKategory('טבעת')"> טבעות</button>
+        <button class="btn" onclick="shop.showProductByKategory('שרשרת')"> שרשראות</button>
+        <button class="btn" onclick="shop.showProductByKategory('עגילים')"> עגילים</button>
+
+    </div>
+    <div id="selectKategory"></div>
+    <div id="myBtnContainer">
+        <h1 id="h1">סנן לפי צבע</h1>
+        <button class="btn" style=" margin-left: 48%;border-color: darkolivegreen;" onclick="shop.showAllProducts()">
+            הכל</button>
+        <br>
+        <button class="btn" onclick="shop.showProductByColor('roze')"> roze</button>
+        <button class="btn" onclick="shop.showProductByColor('silver')"> כסף</button>
+        <button class="btn" onclick="shop.showProductByColor('gold')"> זהב</button>
+
+    </div>
+    <div id="selectColor"></div>
+    <h1 id="h1">רשימת המוצרים שלנו</h1>
+    <div id="itemShop" class="item-shop"></div>
+    <div id="viewProduct" class="viewProduct"></div>
+    <div id="viewProductByCategory"></div>
+    <div id="add"></div>
+    <div id="edit"></div>
+
+    <script src="shop.js"></script>
+    <script src="product.js"></script>
+
+</body>
+
+</html>
